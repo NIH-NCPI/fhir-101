@@ -18,7 +18,8 @@ then this guide is for you :)
 
 ## What is this Guide?
 The FHIR 101 guide is an online Jupyter Notebook deployed with
-[Binder](http://mybinder.org/).
+[Binder](http://mybinder.org/). That means its publically hosted and
+you can play with it in your browser.
 
 The primary purpose of the notebook is to quickly educate you on what FHIR is
 and to walk you through practical exercises that will teach you the FHIR basics:
