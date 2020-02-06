@@ -1,0 +1,56 @@
+{
+  "resourceType" : "StructureDefinition",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "oo"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "http://fhir.kids-first.io/StructureDefinition/patient-race",
+  "version" : "4.0.0",
+  "name" : "patient-race",
+  "status" : "active",
+  "date" : "2020-01-13",
+  "publisher" : "Kids First DRC",
+  "description" : "Race of patient",
+  "fhirVersion" : "4.0.0",
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Patient"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Race",
+      "definition" : "Race of patient",
+      "min" : 0,
+      "max" : "1",
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://fhir.kids-first.io/StructureDefinition/patient-race"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
+  }
+}

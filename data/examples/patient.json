@@ -1,0 +1,18 @@
+{
+    "resourceType":"Patient",
+    "id": "kidsfirst-test-patient",
+    "text": {
+       "status": "generated",
+       "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>A valid patient resource for testing purposes</p></div>"
+    },
+    "meta": {
+        "profile": ["http://fhir.kids-first.io/StructureDefinition/Patient"]
+    },
+    "gender": "male",
+    "extension": [
+        {
+            "url":"http://fhir.kids-first.io/StructureDefinition/patient-race",
+            "valueString": "Asian"
+        }
+    ]
+}

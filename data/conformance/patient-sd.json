@@ -1,0 +1,110 @@
+{
+    "resourceType": "StructureDefinition",
+    "url": "http://fhir.kids-first.io/StructureDefinition/Patient",
+    "version": "0.1.0",
+    "name": "kids_first_research_participant",
+    "title": "Kids First Research Participant",
+    "status": "draft",
+    "publisher": "Kids First DRC",
+    "description": "The individual human or other organism.",
+    "fhirVersion": "4.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Patient",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Patient",
+                "path": "Patient"
+            },
+            {
+                "id": "Patient.identifier",
+                "path": "Patient.identifier",
+                "mustSupport": true
+            },
+            {
+                "id": "Patient.name",
+                "path": "Patient.name",
+                "max": "0"
+            },
+            {
+                "id": "Patient.telecom",
+                "path": "Patient.telecom",
+                "max": "0"
+            },
+            {
+                "id": "Patient.address",
+                "path": "Patient.address",
+                "max": "0"
+            },
+            {
+                "id": "Patient.photo",
+                "path": "Patient.photo",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact",
+                "path": "Patient.contact",
+                "max": "0"
+            },
+            {
+                "id": "Patient.gender",
+                "path": "Patient.gender",
+                "mustSupport": true,
+                "min": 1
+            },
+            {
+                "id": "Patient.extension",
+                "path": "Patient.extension",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "ordered": false,
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Patient.extension:patient-race",
+                "path": "Patient.extension",
+                "sliceName": "patient-race",
+                "short": "Race",
+                "definition": "Race of patient",
+                "min": 0,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://fhir.kids-first.io/StructureDefinition/patient-race"
+                        ]
+                    }
+                ],
+                "isModifier": false
+            },
+            {
+                "id": "Patient.extension:biological-sex",
+                "path": "Patient.extension",
+                "sliceName": "biological-sex",
+                "short": "Chromosomal sex of an individual.",
+                "definition": "This element represents the chromosomal sex of an individual.",
+                "min": 0,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://fhir.kids-first.io/StructureDefinition/patient-biological-sex"
+                        ]
+                    }
+                ],
+                "mustSupport": true
+            }
+        ]
+    }
+}

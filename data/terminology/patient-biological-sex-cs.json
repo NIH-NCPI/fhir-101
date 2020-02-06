@@ -1,0 +1,71 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "http://fhir.kids-first.io/CodeSystem/biological-sex",
+  "version": "0.1.0",
+  "name": "BiologicalSex",
+  "title": "Biological Sex",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Kids First DRC",
+  "description": "Represents the chromosomal sex of an individual.",
+  "caseSensitive": false,
+  "valueSet": "http://fhir.kids-first.io/ValueSet/biological-sex",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "UNKNOWN_KARYOTYPE",
+      "display": "Untyped or inconclusive karyotyping",
+      "definition": "Untyped or inconclusive karyotyping"
+    },
+    {
+      "code": "XX",
+      "display": "Female",
+      "definition": "Female"
+    },
+    {
+      "code": "XY",
+      "display": "Male",
+      "definition": "Male"
+    },
+    {
+      "code": "XO",
+      "display": "Single X chromosome only",
+      "definition": "Single X chromosome only"
+    },
+    {
+      "code": "XXY",
+      "display": "Two X and one Y chromosome",
+      "definition": "Two X and one Y chromosome"
+    },
+    {
+      "code": "XXX",
+      "display": "Three X chromosomes",
+      "definition": "Three X chromosomes"
+    },
+    {
+      "code": "XXYY",
+      "display": "Two X chromosomes and two Y chromosomes",
+      "definition": "Two X chromosomes and two Y chromosomes"
+    },
+    {
+      "code": "XXXY",
+      "display": "Three X chromosomes and one Y chromosome",
+      "definition": "Three X chromosomes and one Y chromosome"
+    },
+    {
+      "code": "XXXX",
+      "display": "Four X chromosomes",
+      "definition": "Four X chromosomes"
+    },
+    {
+      "code": "XYY",
+      "display": "One X and two Y chromosomes",
+      "definition": "One X and two Y chromosomes"
+    },
+    {
+      "code": "OTHER_KARYOTYPE",
+      "display": "None of the above types",
+      "definition": "None of the above types"
+    }
+  ]
+}
