@@ -1,0 +1,70 @@
+{
+    "resourceType": "StructureDefinition",
+    "url": "http://fhir.kids-first.io/StructureDefinition/patient-biological-sex",
+    "version": "0.1.0",
+    "name": "BiologicalSex",
+    "title": "Biological Sex",
+    "status": "draft",
+    "publisher": "Kids First DRC",
+    "description": "The chromosomal sex of an individual.",
+    "fhirVersion": "4.0.0",
+    "kind": "complex-type",
+    "abstract": false,
+    "context": [
+        {
+            "type": "element",
+            "expression": "Patient"
+        }
+    ],
+    "type": "Extension",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Extension",
+                "path": "Extension",
+                "short": "The chromosomal sex of an individual.",
+                "definition": "The chromosomal sex of an individual.",
+                "min": 0,
+                "max": "1",
+                "mustSupport": true,
+                "isModifier": false
+            },
+            {
+                "id": "Extension.extension",
+                "path": "Extension.extension",
+                "max": "0"
+            },
+            {
+                "id": "Extension.url",
+                "path": "Extension.url",
+                "type": [
+                    {
+                        "code": "uri"
+                    }
+                ],
+                "fixedUri": "http://fhir.kids-first.io/StructureDefinition/patient-biological-sex"
+            },
+            {
+                "id": "Extension.valueCodeableConcept",
+                "path": "Extension.valueCodeableConcept",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ],
+                "binding": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+                            "valueString": "Biological Sex"
+                        }
+                    ],
+                    "strength": "required",
+                    "valueSet": "http://fhir.kids-first.io/ValueSet/biological-sex"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://fhir.kids-first.io/ValueSet/biological-sex",
+    "version": "0.1.0",
+    "name": "BiologicalSex",
+    "title": "Biological Sex",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "Kids First DRC",
+    "description": "Represents the chromosomal sex of an individual.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://fhir.kids-first.io/CodeSystem/biological-sex"
+            }
+        ]
+    }
+}

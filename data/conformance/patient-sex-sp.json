@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "url": "http://fhir.kids-first.io/SearchParameter/patient-sex",
+  "name": "patient-sex",
+  "status": "active",
+  "experimental": true,
+  "publisher": "Kids First DRC",
+  "description": "Search for Patients by their biological sex",
+  "code": "sex",
+  "base": [
+    "Patient"
+  ],
+  "type": "token",
+  "expression": "Patient.extension.where(url = 'http://fhir.kids-first.io/StructureDefinition/patient-sex').value",
+  "target": [
+    "Patient"
+  ]
+}

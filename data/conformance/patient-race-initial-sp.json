@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "url": "http://fhir.kids-first.io/SearchParameter/patient-race",
+  "name": "patient-race",
+  "status": "active",
+  "experimental": true,
+  "publisher": "Kids First DRC",
+  "description": "Search for Patients by their race",
+  "code": "race",
+  "base": [
+    "Patient"
+  ],
+  "type": "string",
+  "expression": "Patient.extension.where(url = 'http://fhir.kids-first.io/StructureDefinition/patient-race').value",
+  "target": [
+    "Patient"
+  ]
+}
