@@ -6,4 +6,5 @@ jupyter contrib nbextension install --user
 jupyter nbextension enable collapsible_headings/main
 jupyter nbextension enable codefolding/main
 jupyter nbextension enable toc2/main
-jt -t solarizedl -cursw 3 -cellw 1000 -tf sourcesans
+# jt -t solarizedl -cursw 3 -cellw 1000 -tf sourcesans
+jt -cursw 3 -cellw 1000 -tf sourcesans
