@@ -1,10 +1,8 @@
 # 🔥 FHIR 101 - A Practical Guide
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fhir-sci/fhir-101/master?filepath=FHIR%20101%20-%20Practical%20Guide.ipynb)
-
 ## Quickstart
 
-Check out the live [FHIR 101 Jupyter Notebook 📓](https://mybinder.org/v2/gh/fhir-sci/fhir-101/master?filepath=FHIR%20101%20-%20Practical%20Guide.ipynb)
+Check out the live [FHIR Query 101 Colaboratory Notebook 📓](https://colab.research.google.com/drive/1nIGKjrGpmi7vhWqpbaGHE3DoJf5OKp8-?usp=sharing)
 
 ## Hello there!
 
@@ -18,7 +16,7 @@ then this guide is for you :)
 
 ## What is this Guide?
 The FHIR 101 guide is an online Jupyter Notebook deployed with
-[Binder](http://mybinder.org/). That means its publically hosted and
+[Google Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb). That means its publically hosted and
 you can play with it in your browser.
 
 The primary purpose of the notebook is to quickly educate you on what FHIR is
