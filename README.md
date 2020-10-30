@@ -22,15 +22,16 @@ you can play with it in your browser.
 The primary purpose of the notebook is to quickly educate you on what FHIR is
 and to walk you through practical exercises that will teach you the FHIR basics:
 
-- Create and validate a FHIR data model for an entity
-- Add/remove attributes to/from an entity in the model
-- Create attributes which are constrained by ontologies
-- Make entity attributes searchable in the FHIR server
-- Deploy the FHIR data model into a FHIR server
-- Load data into the FHIR server which conforms to the model
-- Search for data in the FHIR server
+- What is FHIR
+- What do the data look like
+- How to use Python to query databases 
+- How to use FHIR RESTful API to identify the data model and query the server 
 
 You can read through the notebook to learn about FHIR concepts and execute
 notebook code cells in the tutorial section to see practical examples.
+
+More Notebooks are coming to learn how to create or modify the data model, 
+and how manage the data linked to the model.
+
 
 Read more about Jupyter Notebook [here](https://jupyter-notebook.readthedocs.io/en/stable/)
